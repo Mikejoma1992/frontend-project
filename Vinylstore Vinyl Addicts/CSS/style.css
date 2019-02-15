@@ -10,11 +10,15 @@ body
     grid-column: 1/17;
 }
 
+header
+{
+	color: white;
+}
+
 header #bedrijf
 {
     background-color: #F64E8B;
     height: 100%;
-    color: black;
 }
 
 header #logo
@@ -56,14 +60,12 @@ nav li
 nav li:hover 
 {
 	background-color: #F64E8B;
-	color: black;
     cursor: pointer;
 }
 
 nav .active
 {
 	background-color: #F64E8B;
-	color: black;
 	font-weight: bold;
 }
 
