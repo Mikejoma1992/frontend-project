@@ -3,8 +3,9 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-        <!-- <script src="../JS/script.js" defer></script> -->
-	    <!-- <script src="https://code.jquery.com/jquery-3.3.1.js"></script> -->
+        <link rel="stylesheet" ty[e="text/css" href="../CSS/Contact.css">
+        <script src="../JS/Contact.js" defer></script>
+	    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
         <header>
@@ -45,10 +46,23 @@
             <table>
                 <tr>
                     <td>
+                        Aanhef
+                    </td>
+                    <td>
+                        <div>
+                            <select name="Aanhef" id="Aanhef">
+                                <option value="Man">Man</option>
+                                <option value="Vrouw">Vrouw</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         Naam:
                     </td>
                     <td>
-                        <input name="naam" type="text" placeholder="Naam">
+                        <input name="naam" type="text" placeholder="Naam" id="naam">
                     </td>
                 </tr>
                 <tr>
@@ -56,7 +70,23 @@
                         E-mail adres:
                     </td>
                     <td>
-                        <input name="naam" type="text" placeholder="Naam">
+                        <input name="E-mail" type="email" placeholder="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Telefoonnummer:
+                    </td>
+                    <td>
+                        <input name="Telefoonnummer" type="tel" placeholder="Telefoonnummer">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                        <textarea name="Vraag" id="Vraag" cols="30" rows="10"></textarea>
                     </td>
                 </tr>
             </table>
