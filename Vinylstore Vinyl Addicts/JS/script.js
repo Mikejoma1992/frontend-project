@@ -6,5 +6,9 @@ function submition()
 
     $('#result').html(artist, year);
 }
-
-$("#send").submit(submition());
+$( "#checkRarity" ).submit(function( event ) {
+    
+      $( "h1" ).text( "yeet" ).show();
+      event.preventDefault();
+});
+    
