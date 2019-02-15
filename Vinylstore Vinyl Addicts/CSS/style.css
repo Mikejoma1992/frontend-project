@@ -68,7 +68,7 @@ nav .active
 
 footer
 {
-	position: absolute;
+	display: block;
 	bottom: 0px;
 }
 
