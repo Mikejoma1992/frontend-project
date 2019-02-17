@@ -12,22 +12,61 @@ $("#checkRarity").submit(function(event)
     var artist = $('#artist').val();
     var year = $('#year').val();
     var collect = $('#collectors').val();
-    var arrayBadArtist = ['Vader Abraham', 'BZN', 'Kamahl', 'Heintje']
     
+    var objArtist = [
+                        {  
+                            'name': 'Vader Abraham', 
+                            'value': 4
+                        },
+                        {
+                            'name': 'BZN',
+                            'value': 4
+                        },
+                        {
+                            'name': 'Kamahl',
+                            'value': 4
+                        },
+                        {
+                            'name': 'Heintje',
+                            'value': 4
+                        },
+                        {
+                            'name': 'Supertramp',
+                            'value': 6
+                        },
+                        {
+                            'name': 'Queen',
+                            'value': 6
+                        },
+                        {
+                            'name': 'Metallica',
+                            'value': 6
+                        },
+                        {
+                            'name': 'Lionel Richie',
+                            'value': 6
+                        }];
+    var arrayFamousArtist = ['Supertramp', 'Queen', 'Metallica', 'Lionel Richie'];
+
     for( var i=0; i < arrayBadArtist.length; i++ )
     {
+        var rarity = 0;
         
-        var badArtist = arrayBadArtist[i];
         if ( artist == arrayBadArtist[i])
         {
-            $("#result").text("goed").show();
-            break;
+           rarity = 4;
+        }
+        else if (artist == arrayFamousArtist[i])
+        {
+            rarity = 6;
+            
         }
         else
         {
-            
-            $("#result").text("jammer").show();
+            rarity = 5;
         }
+        
+       console.log(rarity);
         
     }   
     event.preventDefault();
