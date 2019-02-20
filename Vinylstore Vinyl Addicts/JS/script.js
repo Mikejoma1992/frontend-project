@@ -12,9 +12,8 @@ $("#checkRarity").submit(function(event)
     var artist = $('#artist').val();
     var thisYear = new Date().getFullYear();
     var year = $('#year').val();
-    var checkBoxs = $('#collectors');
-  
-    
+    var checked = document.getElementById("collectors").checked;
+
     var objArtist = [
                         {  
                             name: 'Vader Abraham', 
@@ -53,14 +52,22 @@ $("#checkRarity").submit(function(event)
     var yearCalculate = (thisYear - year) * 0.1;
     
     $(document).ready(function () {
-        var ckbox = $('#checkbox');
-        var checkedValue = '';
-        var x = $('#collectors').checked;
+        var checkboxValue = 0;
+      if (checked == true)
+      {
+          checkboxValue = 5;
+      }
+        
            
             objArtist.forEach(function(item){
                 if(item.name != artist)
                 {
-                    var notKnownRarity = artistValue + yearCalculate;
+                    var notKnownRarity = artistValue * yearCalculate + checkboxValue;
+                    
+                    if(notKnownRarity < 10)
+                    {
+                        notKnownRarity = 'yeet';
+                    }
                     $('#result').text(notKnownRarity).show();
                 }
                 else
@@ -73,11 +80,12 @@ $("#checkRarity").submit(function(event)
                                 artistValue = item.value;
                             }
                         
-                            var rarity = artistValue + yearCalculate;
+                            var rarity = artistValue * yearCalculate + checkboxValue;
                             $('#result').text(artistValue).show();
                         }
                     });
                 }
+                
              });
         });
     
