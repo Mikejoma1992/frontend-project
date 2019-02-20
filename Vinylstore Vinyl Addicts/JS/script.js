@@ -46,8 +46,20 @@ $("#checkRarity").submit(function(event)
                         {
                             name: 'Lionel Richie',
                             value: 6
-                        }];
-    var arrayFamousArtist = ['Supertramp', 'Queen', 'Metallica', 'Lionel Richie'];
+                        },
+                        {
+                            name: 'The Beatles',
+                            value: 7
+                        },
+                        {
+                            name: 'Rolling Stones',
+                            value: 7
+                        },
+                        {
+                            name: 'Madonna',
+                            value: 7
+                        },
+                    ];
     var artistValue = 5;
     var yearCalculate = (thisYear - year) * 0.1;
     var rarity = 0;
@@ -80,9 +92,24 @@ $("#checkRarity").submit(function(event)
                 
             }
         });
-                
-        $('#result').text(rarity).show();
-             
+
+       if(rarity <= 10)
+       {   
+            $('#result').text('Geen waarde').show();
+       }
+       else if(rarity > 10, rarity <= 25)
+       {
+            $('#result').text('Gewoon').show();
+       }
+       else if (rarity > 25, rarity <= 35)
+       {
+            $('#result').text('Zeldzaam').show();
+       }
+       else if (rarity > 35)
+       {
+            $('#result').text('Zeer zeldzaam').show();
+       }
+             console.log(rarity);
     });
     
     
