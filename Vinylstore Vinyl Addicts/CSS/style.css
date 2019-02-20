@@ -6,6 +6,20 @@
 body {
 	display: grid;
 	grid-column: 1/17;
+	background-color: #010101;
+}
+
+main
+{
+	color: white;
+	text-align: center;
+}
+
+main p
+{
+	width: 50%;
+	margin-left: 25%;
+	font-size: 1.25em;
 }
 
 header {
