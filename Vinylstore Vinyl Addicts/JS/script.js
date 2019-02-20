@@ -50,44 +50,40 @@ $("#checkRarity").submit(function(event)
     var arrayFamousArtist = ['Supertramp', 'Queen', 'Metallica', 'Lionel Richie'];
     var artistValue = 5;
     var yearCalculate = (thisYear - year) * 0.1;
-    
+    var rarity = 0;
     $(document).ready(function () {
         var checkboxValue = 0;
-      if (checked == true)
-      {
-          checkboxValue = 5;
-      }
+        if (checked == true)
+        {
+            checkboxValue = 5;
+        }
         
            
-            objArtist.forEach(function(item){
-                if(item.name != artist)
-                {
-                    var notKnownRarity = artistValue * yearCalculate + checkboxValue;
-                    
-                    if(notKnownRarity < 10)
-                    {
-                        notKnownRarity = 'yeet';
-                    }
-                    $('#result').text(notKnownRarity).show();
-                }
-                else
-                {
-                    objArtist.forEach(function(item){
-                        if(item.name === artist){
-                            
-                            if(item.name === artist)
-                            {
-                                artistValue = item.value;
-                            }
-                        
-                            var rarity = artistValue * yearCalculate + checkboxValue;
-                            $('#result').text(artistValue).show();
-                        }
-                    });
-                }
+        objArtist.forEach(function(item){
+            if(item.name != artist)
+            {
+                rarity = artistValue * yearCalculate + checkboxValue;
                 
-             });
+                
+            }
         });
+                
+        objArtist.forEach(function(item){
+            if(item.name === artist){
+                
+                if(item.name === artist)
+                {
+                    artistValue = item.value;
+                }
+            
+                rarity = artistValue * yearCalculate + checkboxValue;
+                
+            }
+        });
+                
+        $('#result').text(rarity).show();
+             
+    });
     
     
     //$('#result').text(yearCalculate).show();
