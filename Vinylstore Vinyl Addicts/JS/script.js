@@ -1,19 +1,14 @@
-function submition()
-{
-    var artist = $('#artist').val();
-    var year = $('#year').val();
-    var collect = $('#collectors').val();
-
-    $('#result').html(artist, year);
-}
-
 $("#checkRarity").submit(function(event)
 {
+    // variables
     var artist = $('#artist').val();
     var thisYear = new Date().getFullYear();
     var year = $('#year').val();
     var checked = document.getElementById("collectors").checked;
-
+    var artistValue = 5;
+    var yearCalculate = (thisYear - year) * 0.1;
+    var rarity = 0;
+    // object
     var objArtist = [
                         {  
                             name: 'Vader Abraham', 
@@ -60,39 +55,38 @@ $("#checkRarity").submit(function(event)
                             value: 7
                         },
                     ];
-    var artistValue = 5;
-    var yearCalculate = (thisYear - year) * 0.1;
-    var rarity = 0;
+    // when submit use this function
     $(document).ready(function () {
         var checkboxValue = 0;
+        // if checkbox is checked give value
         if (checked == true)
         {
             checkboxValue = 5;
         }
-        
-           
+        // loop tru object
         objArtist.forEach(function(item){
+            // if object doesnt have input do this value
             if(item.name != artist)
             {
+                // calculate
                 rarity = artistValue * yearCalculate + checkboxValue;
-                
-                
             }
         });
-                
+        
         objArtist.forEach(function(item){
+            // if name is known 
             if(item.name === artist){
-                
+                // give value
                 if(item.name === artist)
                 {
                     artistValue = item.value;
                 }
-            
+                // calculate
                 rarity = artistValue * yearCalculate + checkboxValue;
                 
             }
         });
-
+        // check value
        if(rarity <= 10)
        {   
             $('#result').text('Geen waarde').show();
@@ -109,34 +103,6 @@ $("#checkRarity").submit(function(event)
        {
             $('#result').text('Zeer zeldzaam').show();
        }
-             console.log(rarity);
-    });
-    
-    
-    //$('#result').text(yearCalculate).show();
-    
-    /*for( var i=0; i < objArtist.length; i++ )
-    {
-       
-        
-        if ( objArtist.name === artist)
-        {
-            console.log(objArtist.value);
-            
-        }
-        else if (artist == objArtist[i])
-        {
-            
-            
-        }
-        else
-        {
-            
-            
-        }
-        $('#result').text(objArtist).show();
-       console.log(objArtist);
-        
-    }  */ 
+    }); 
     event.preventDefault();
 });
