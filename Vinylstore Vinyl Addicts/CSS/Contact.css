@@ -1,0 +1,18 @@
+textarea
+{
+    resize: none;
+}
+
+#ContactFormulier
+{
+    display: inline-block;
+    width: 40%;
+    height: 1000px;
+    border: 1px solid black;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+}

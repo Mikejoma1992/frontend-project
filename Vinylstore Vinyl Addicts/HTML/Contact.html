@@ -3,93 +3,174 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-        <link rel="stylesheet" ty[e="text/css" href="../CSS/Contact.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/Contact.css">
         <script src="../JS/Contact.js" defer></script>
 	    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     </head>
     <body>
-        <header>
-            <ul>
-                <a>
-                    <li>
-                        Home
-                    </li>
-                </a>
-                <a>
-                    <li>
-                        algemene informatie
-                    </li>
-                </a>
-                <a>
-                    <li>
-                        Overzicht
-                    </li>
-                </a>
-                <a>
-                    <li>
-                        Nieuws
-                    </li>
-                </a>
-                <a>
-                    <li>
-                        Zeldzaamheidchecker
-                    </li>
-                </a>
-                <a>
-                    <li>
-                        Contact
-                    </li>
-                </a>
-            </ul>
-        </header>
-        <main>
-            <table>
-                <tr>
-                    <td>
-                        Aanhef
-                    </td>
-                    <td>
-                        <div>
-                            <select name="Aanhef" id="Aanhef">
-                                <option value="Man">Man</option>
-                                <option value="Vrouw">Vrouw</option>
-                            </select>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Naam:
-                    </td>
-                    <td>
-                        <input name="naam" type="text" placeholder="Naam" id="naam">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        E-mail adres:
-                    </td>
-                    <td>
-                        <input name="E-mail" type="email" placeholder="email">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Telefoonnummer:
-                    </td>
-                    <td>
-                        <input name="Telefoonnummer" type="tel" placeholder="Telefoonnummer">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
+        <wrapper>
+            <header>
+                <div id="bedrijf">
+                    <img src="../Images/vinyl_logo.png" id="logo">
+                    <h1>
+                        Vinylstore Vinyl Addicts
+                    </h1>
+                </div>
+                <nav>
+                    <ul>
+                        <a>
+                            <li>
+                                Home
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                                Algemene informatie
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                                Overzicht
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                                Nieuws
+                            </li>
+                        </a>
+                        <a>
+                            <li>
+                                Zeldzaamheidchecker
+                            </li>
+                        </a>
+                        <a>
+                            <li class="active">
+                                Contact
+                            </li>
+                        </a>
+                    </ul>
+                </nav>
+            </header>
+            <main>
+                <section id="ContactFormulier">
+                    <form>
+                        <table>
+                            <tr>
+                                <td>
+                                    Aanhef
+                                </td>
+                                <td>   
+                                    <select name="Aanhef" id="Aanhef">
+                                        <option value="Man">Man</option>
+                                        <option value="Vrouw">Vrouw</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Naam:
+                                </td>
+                                <td>
+                                    <input name="naam" type="text" placeholder="Naam" id="naam" required="required"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    E-mail adres:
+                                </td>
+                                <td>
+                                    <input name="E-mail" type="email" placeholder="e-mail adres" required="required"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Telefoonnummer:
+                                </td>
+                                <td>
+                                    <input name="Telefoonnummer" type="tel" placeholder="Telefoonnummer" required="required"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Vraag/opmerking
+                                </td>
+                                <td>
+                                    <textarea name="Vraag" id="Vraag" cols="30" rows="10" placeholder="Vraag/opmerking" required="required"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
 
-                    </td>
-                    <td>
-                        <textarea name="Vraag" id="Vraag" cols="30" rows="10"></textarea>
-                    </td>
-                </tr>
-            </table>
-        </main>
+                                </td>
+                                <td>
+                                    <input type="checkbox" name="Nieuwsbrief" id="Nieuwsbrief"> inschrijven voor de nieuwsbrief
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </section>
+            </main>
+            <footer class="footer-distributed">
+
+                <div class="footer-left">
+    
+                    <h3>Company<span>logo</span></h3>
+    
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        ·
+                        <a href="#">Algemene informatie</a>
+                        ·
+                        <a href="#">Overzicht</a>
+                        ·
+                        <a href="#">Nieuws</a>
+                        ·
+                        <a href="#">Zeldzaamheidchecker</a>
+                        ·
+                        <a href="#">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">Company Name &copy; 2015</p>
+                </div>
+    
+                <div class="footer-center">
+    
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>21 Revolution Street</span> Paris, France</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+1 555 123456</p>
+                    </div>
+    
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    </div>
+    
+                </div>
+    
+                <div class="footer-right">
+    
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                    </p>
+    
+                    <div class="footer-icons">
+    
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+    
+                    </div>
+    
+                </div>
+    
+            </footer>
+        </wrapper>
     </body>
 </html>

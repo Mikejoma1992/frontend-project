@@ -10,25 +10,110 @@ function submition()
 $("#checkRarity").submit(function(event)
 {
     var artist = $('#artist').val();
+    var thisYear = new Date().getFullYear();
     var year = $('#year').val();
-    var collect = $('#collectors').val();
-    var arrayBadArtist = ['Vader Abraham', 'BZN', 'Kamahl', 'Heintje']
+    var checked = document.getElementById("collectors").checked;
+
+    var objArtist = [
+                        {  
+                            name: 'Vader Abraham', 
+                            value: 4
+                        },
+                        {
+                            name: 'BZN',
+                            value: 4
+                        },
+                        {
+                            name: 'Kamahl',
+                            value: 4
+                        },
+                        {
+                            name: 'Heintje',
+                            value: 4
+                        },
+                        {
+                            name: 'Supertramp',
+                            value: 6
+                        },
+                        {
+                            name: 'Queen',
+                            value: 6
+                        },
+                        {
+                            name: 'Metallica',
+                            value: 6
+                        },
+                        {
+                            name: 'Lionel Richie',
+                            value: 6
+                        }];
+    var arrayFamousArtist = ['Supertramp', 'Queen', 'Metallica', 'Lionel Richie'];
+    var artistValue = 5;
+    var yearCalculate = (thisYear - year) * 0.1;
     
-    for( var i=0; i < arrayBadArtist.length; i++ )
-    {
+    $(document).ready(function () {
+        var checkboxValue = 0;
+      if (checked == true)
+      {
+          checkboxValue = 5;
+      }
         
-        var badArtist = arrayBadArtist[i];
-        if ( artist == arrayBadArtist[i])
+           
+            objArtist.forEach(function(item){
+                if(item.name != artist)
+                {
+                    var notKnownRarity = artistValue * yearCalculate + checkboxValue;
+                    
+                    if(notKnownRarity < 10)
+                    {
+                        notKnownRarity = 'yeet';
+                    }
+                    $('#result').text(notKnownRarity).show();
+                }
+                else
+                {
+                    objArtist.forEach(function(item){
+                        if(item.name === artist){
+                            
+                            if(item.name === artist)
+                            {
+                                artistValue = item.value;
+                            }
+                        
+                            var rarity = artistValue * yearCalculate + checkboxValue;
+                            $('#result').text(artistValue).show();
+                        }
+                    });
+                }
+                
+             });
+        });
+    
+    
+    //$('#result').text(yearCalculate).show();
+    
+    /*for( var i=0; i < objArtist.length; i++ )
+    {
+       
+        
+        if ( objArtist.name === artist)
         {
-            $("#result").text("goed").show();
-            break;
+            console.log(objArtist.value);
+            
+        }
+        else if (artist == objArtist[i])
+        {
+            
+            
         }
         else
         {
             
-            $("#result").text("jammer").show();
+            
         }
+        $('#result').text(objArtist).show();
+       console.log(objArtist);
         
-    }   
+    }  */ 
     event.preventDefault();
 });
