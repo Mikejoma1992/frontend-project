@@ -1,18 +1,177 @@
+#MContact
+{
+    text-align: left;
+}
+
 textarea
 {
     resize: none;
+    margin-left: 2.5%;
+    margin-top: 15px;
+    width: 89%;
+    height: 150px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 5px;
+    border: 1px solid black;
 }
 
 #ContactFormulier
 {
+
+    margin-top: 20px;
+    margin-left: 5%;
     display: inline-block;
     width: 40%;
-    height: 1000px;
     border: 1px solid black;
 }
 
-table
+input
+{
+    margin-left: 2.5%;
+    margin-top: 15px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+input:focus
+{
+    outline: none;
+}
+
+#Aanhef
+{
+    margin-left: 2.5%;
+    margin-top: 20px;
+    width: 91%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#klein
+{
+    font-size: 10px;
+    height: 10px;
+    padding: 0px;
+}
+
+option
+{
+    padding: 5px;
+}
+
+/* Checkbox nieuwsbrief */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-left: 3%;
+}
+  
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+    background-color: #F64E8B;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/* opmaak knop */
+
+#knop
+{
+    background-color: #F64E8B;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+
+/* bedrijfsgegevens */
+
+#gegevens
+{
+    display: inline-block;
+    position: absolute;
+    border: 1px solid black;
+    margin-top: 20px;
+    margin-left: 9%;
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+}
+
+#gegevens>p
+{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#gegevens>table
 {
     margin-left: auto;
     margin-right: auto;
+}
+
+#gegevens>table td
+{
+    width: 140px;
+    padding-left: 10px;
+}
+
+.links
+{
+    padding-left: 0px;
+    text-align: right;
 }

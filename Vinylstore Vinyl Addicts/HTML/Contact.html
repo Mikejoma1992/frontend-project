@@ -51,63 +51,50 @@
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main id="MContact">
                 <section id="ContactFormulier">
-                    <form>
-                        <table>
-                            <tr>
-                                <td>
-                                    Aanhef
-                                </td>
-                                <td>   
-                                    <select name="Aanhef" id="Aanhef">
-                                        <option value="Man">Man</option>
-                                        <option value="Vrouw">Vrouw</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Naam:
-                                </td>
-                                <td>
-                                    <input name="naam" type="text" placeholder="Naam" id="naam" required="required"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    E-mail adres:
-                                </td>
-                                <td>
-                                    <input name="E-mail" type="email" placeholder="e-mail adres" required="required"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Telefoonnummer:
-                                </td>
-                                <td>
-                                    <input name="Telefoonnummer" type="tel" placeholder="Telefoonnummer" required="required"/>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Vraag/opmerking
-                                </td>
-                                <td>
-                                    <textarea name="Vraag" id="Vraag" cols="30" rows="10" placeholder="Vraag/opmerking" required="required"></textarea>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
+                    <form>       
+                        <select name="Aanhef" id="Aanhef">
+                            <option id="klein" value="" disabled selected>Aanhef</option>
+                            <option value="Man">Man</option>
+                            <option value="Vrouw">Vrouw</option>
+                            <option value="Anders">Anders</option>
+                        </select>
 
-                                </td>
-                                <td>
-                                    <input type="checkbox" name="Nieuwsbrief" id="Nieuwsbrief"> inschrijven voor de nieuwsbrief
-                                </td>
-                            </tr>
-                        </table>
+                        <input name="naam" type="text" placeholder="Naam" id="naam" required="required"/>
+                    
+                        <input name="E-mail" type="email" placeholder="e-mail adres" required="required"/>
+                    
+                        <input name="Telefoonnummer" type="tel" placeholder="Telefoonnummer" required="required"/>
+                    
+                        <textarea name="Vraag" id="Vraag" cols="30" rows="10" placeholder="Vraag/opmerking" required="required"></textarea><br>
+                    
+                        <label class="container">Aanmelden voor de nieuwsbrief
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+
+                        <input type="submit" placeholder="Verzenden" name="verzenden" id="knop">
                     </form>
+                </section>
+                <section id="gegevens">
+                    <p>Bedrijfsgegevens</p>
+                    <table>
+                        <tr>
+                            <td class="links">kvk nummer:</td>
+                            <td>12345678</td>
+                        </tr>
+                        <tr>
+                            <td class="links">
+                                adres:
+                            </td>
+                            <td>onderwijsboulevard 3</td>
+                        </tr>
+                        <tr>
+                            <td class="links">plaats:</td>
+                            <td>s'-Hertogenbosch</td>
+                        </tr>
+                    </table>
                 </section>
             </main>
             <footer class="footer-distributed">
