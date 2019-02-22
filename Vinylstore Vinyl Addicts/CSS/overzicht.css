@@ -1,0 +1,18 @@
+.res {
+
+    border-bottom:1px solid black;
+    text-align:left;
+
+}
+
+.res img {
+
+    margin-top:8.5px;
+    margin-left:5px;
+    display:inline
+}
+
+.res span {
+
+    display:block;
+}
