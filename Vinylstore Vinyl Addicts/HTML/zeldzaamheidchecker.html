@@ -2,7 +2,8 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/zeldzaamheidchecker.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+
         <script src="../JS/script.js" defer></script>
         <script src="../JS/index.js" defer></script>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -54,15 +55,22 @@
                 </nav>
             </header>
             <main>
-                
-                
+                <br>
+                <h1>Zeldzaamheidchecker</h1>
+                <br>
+                <p>U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven invullen. De collectors editie is een optie. </p>
+                <br>
                 <form id="checkRarity" action="">
-                    <span>Invoeren artiest: </span><input id="artist" type="text" name="artist" required>
-                    <span>Invullen jaartal: </span><input id="year" type="number" name="year" required>
+                    <span>Invoeren artiest:</span><input id="artist" type="text" name="artist" required>
+                    <br>
+                    <span>Invullen jaartal:</span><input id="year" type="number" name="year" required>
+                    <br>
                     <span>Is het een collectors item? </span><input id="collectors" type="checkbox" name="checkbox">
-                    <input id="send"type="submit" value="verzend"></input>
+                    <br>
+                    <input id="send"type="submit" value="Zelzaamheid bepalen"></input>
                 </form>
-                <h1 id="result"> </h1>
+                <h1>Zeldzaamheid: <span id="result"></span> </h1>
+                
             </main>
             <footer class="footer-distributed">
 
