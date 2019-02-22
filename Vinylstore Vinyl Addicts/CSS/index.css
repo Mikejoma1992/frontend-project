@@ -3,3 +3,9 @@ main #lp
     width: 100%;
     height: 800px;
 }
+
+body
+{
+    background-color: #010101;
+    color: white;
+}
