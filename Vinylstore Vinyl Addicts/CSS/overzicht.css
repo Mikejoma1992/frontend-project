@@ -1,18 +1,78 @@
-.res {
-
-    border-bottom:1px solid black;
-    text-align:left;
-
+main
+{
+    text-align: left;
+}
+#img1
+{
+    position: absolute;
+    width: 7.5%;
+    left: 37.5%;
 }
 
-.res img {
-
-    margin-top:8.5px;
-    margin-left:5px;
-    display:inline
+#img2
+{
+    position: absolute;
+    width: 7.5%;
+    left: 37.5%;
+    margin-top: 8.5%;
 }
 
-.res span {
+#img3
+{
+    position: absolute;
+    width: 7.5%;
+    left: 37.5%;
+    margin-top: 17%;
+}
 
-    display:block;
+#img4
+{
+    position: absolute;
+    width: 7.5%;
+    left: 37.5%;
+    margin-top: 23.5%;
+}
+
+#txt1
+{
+    position: absolute;
+    left: 45.5%;
+    margin-top: 2%;
+}
+
+#txt2
+{
+    position: absolute;
+    left: 45.5%;
+    margin-top: 10.5%;
+}
+
+#txt3
+{
+    position: absolute;
+    left: 45.5%;
+    margin-top: 18%;
+}
+
+#txt4
+{
+    position: absolute;
+    left: 45.5%;
+    margin-top: 25.5%;    
+}
+
+ul
+{
+    z-index: 2;
+}
+
+main
+{
+    z-index: 0;
+}
+
+footer
+{
+    position: absolute;
+    bottom: -40%;
 }
