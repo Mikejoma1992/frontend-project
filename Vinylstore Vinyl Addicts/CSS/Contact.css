@@ -156,7 +156,6 @@ option
     border: 1px solid black;
     margin-top: 20px;
     margin-left: 9%;
-    display: inline-block;
     width: 40%;
     padding: 10px;
 }
@@ -184,3 +183,24 @@ option
     padding-left: 0px;
     text-align: right;
 }
+
+
+/* mediaquery */
+@media only screen and (max-width: 768px) {
+    #ContactFormulier 
+    {
+      width: 90%;
+      display: block;
+    }
+
+    #gegevens
+    {
+        display: block;
+        width: 85.5%;
+        position: relative;
+        border: 1px solid black;
+        margin-top: 20px;
+        margin-left: 5%;
+        padding: 10px;
+    }
+  }
