@@ -144,7 +144,14 @@ option
     color: white;
     cursor: pointer;
     margin-bottom: 25px;
+    box-shadow: 0 5px #FA1E8B;
 }
+
+#knop:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 
 
 /* bedrijfsgegevens */
@@ -172,16 +179,15 @@ option
     margin-right: auto;
 }
 
-#gegevens>table td
+.groot
 {
     width: 140px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
 }
 
-.links
+.kleiner
 {
-    padding-left: 0px;
-    text-align: right;
+    width: 120px;
 }
 
 
