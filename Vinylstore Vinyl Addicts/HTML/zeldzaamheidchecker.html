@@ -58,19 +58,21 @@
                 <br>
                 <h1>Zeldzaamheidchecker</h1>
                 <br>
-                <p>U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven invullen. De collectors editie is een optie. </p>
+                <p id="zeldzaamTekst">U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven invullen. De collectors editie is een optie. </p>
                 <br>
                 <form id="checkRarity" action="">
                     <span class="rarityResponse">Invoeren artiest:</span><input id="artist" type="text" name="artist" required>
                     <br>
+                    <br>
                     <span class="rarityResponse">Invullen jaartal: </span><input id="year" type="number" name="year" required>
                     <br>
                     <br>
-                    <label class="rarityResponse" for="collectors">Is het een collectors item? </label><input id="collectors" type="checkbox" name="checkbox">
+                    <label id="lblCol" class="rarityResponse" for="collectors">Is het een collectors item? </label><input id="collectors" type="checkbox" name="checkbox">
                     <br>
                     <br>
                     <input id="send"type="submit" value="Zelzaamheid bepalen"></input>
                 </form>
+                <br>
                 <h1>Zeldzaamheid:</h1> 
                 <h2 id="result"></h2> 
                 
