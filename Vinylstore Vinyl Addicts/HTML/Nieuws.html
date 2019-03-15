@@ -5,8 +5,9 @@
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/style.css">
     <link rel="stylesheet" type="text/css" href="../CSS/Nieuws.css">
-    <script src="../JS/script.js"></script>
+    <script src="../JS/script.js" defer></script>
     <script src="../JS/index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 </head>
 
 <body>
@@ -34,37 +35,7 @@
         <div class="header-fixed-placeholder"></div>
 
         <!-- The content of your page would go here. -->
-        <script>
-
-            $(document).ready(function () {
-
-                var showHeaderAt = 150;
-
-                var win = $(window),
-                    body = $('body');
-
-                // Show the fixed header only on larger screen devices
-
-                if (win.width() > 400) {
-
-                    // When we scroll more than 150px down, we set the
-                    // "fixed" class on the body element.
-
-                    win.on('scroll', function (e) {
-
-                        if (win.scrollTop() > showHeaderAt) {
-                            body.addClass('fixed');
-                        }
-                        else {
-                            body.removeClass('fixed');
-                        }
-                    });
-
-                }
-
-            });
-
-        </script>
+        
         <main>
 
             <br>
