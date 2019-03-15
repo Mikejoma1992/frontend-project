@@ -2,63 +2,72 @@ main
 {
     text-align: left;
 }
+.artikel
+{
+    position: relative;
+    width: 50%;
+   
+    margin-left: 40%;
+    margin-right: 50%
+}
 #img1
 {
     position: absolute;
-    width: 7.5%;
-    left: 37.5%;
-}
+    width: 100px;
+    
+    max-width: 150px;
 
+}
+#txt1
+{
+    position: relative;
+    left: 120px;
+    
+}
 #img2
 {
     position: absolute;
-    width: 7.5%;
-    left: 37.5%;
-    margin-top: 8.5%;
+    width: 100px;
+    top: 50px;
+   
+}
+#txt2
+{
+    position: relative;
+    left: 120px;
+    top: 50px;
+    
 }
 
 #img3
 {
     position: absolute;
-    width: 7.5%;
-    left: 37.5%;
-    margin-top: 17%;
+    width: 100px;
+    
+    margin-top: 100px;
+}
+
+#txt3
+{
+    position: relative;
+    left: 120px;
+    top: 100px;
 }
 
 #img4
 {
     position: absolute;
-    width: 7.5%;
-    left: 37.5%;
-    margin-top: 23.5%;
-}
-
-#txt1
-{
-    position: absolute;
-    left: 45.5%;
-    margin-top: 2%;
-}
-
-#txt2
-{
-    position: absolute;
-    left: 45.5%;
-    margin-top: 10.5%;
-}
-
-#txt3
-{
-    position: absolute;
-    left: 45.5%;
-    margin-top: 18%;
+    margin-top: 120px;
+    
+    width: 100px;
+    
 }
 
 #txt4
 {
-    position: absolute;
-    left: 45.5%;
-    margin-top: 25.5%;    
+    position: relative;
+    left: 120px;
+    top: 120px;   
 }
 
 ul
@@ -74,5 +83,5 @@ main
 footer
 {
     position: absolute;
-    bottom: -40%;
+    top: 600px;
 }

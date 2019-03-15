@@ -1,61 +1,73 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/Nieuws.css">
-        <script src="../JS/script.js"></script>
-        <script src="../JS/index.js" defer></script>
-    </head>
-    <body>
-        <wrapper>
-            <header>
-                <div id="bedrijf">
-                    <a href="../index.html">
-                        <img src="../Images/vinyl_logo.png" id="logo">
-                    </a>
-                    <h1>
-                        Vinylstore Vinyl Addicts
-                    </h1>
-                </div>
-                <nav>
-                    <ul id="myHeader">
-                        <a href="../index.html">
-                            <li>
-                                Home
-                            </li>
-                        </a>
-                        <a href="AlgemeneInfo.html">
-                            <li>
-                                Algemene informatie
-                            </li>
-                        </a>
-                        <a href="Overzicht.html">
-                            <li>
-                                Overzicht
-                            </li>
-                        </a>
-                        <a href="Nieuws.html">
-                            <li class="active">
-                                Nieuws
-                            </li>
-                        </a>
-                        <a href="zeldzaamheidchecker.html">
-                            <li>
-                                Zeldzaamheidchecker
-                            </li>
-                        </a>
-                        <a href="Contact.html">
-                            <li>
-                                Contact
-                            </li>
-                        </a>
-                    </ul>
-                </nav>
-            </header>
-            <main>
 
-                <br>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/Nieuws.css">
+    <script src="../JS/script.js"></script>
+    <script src="../JS/index.js" defer></script>
+</head>
+
+<body>
+    <wrapper>
+        <header class="header-fixed">
+
+            <div class="header-limiter">
+
+                <h1><a href="index.html"><img src="../Images/vinyl_logo.png"></a></h1>
+
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="AlgemeneInfo.html">Algemene informatie</a>
+                    <a href="Overzicht.html">Overzicht</a>
+                    <a href="Nieuws.html" class="active">Nieuws</a>
+                    <a href="zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <!-- You need this element to prevent the content of the page from jumping up -->
+        <div class="header-fixed-placeholder"></div>
+
+        <!-- The content of your page would go here. -->
+        <script>
+
+            $(document).ready(function () {
+
+                var showHeaderAt = 150;
+
+                var win = $(window),
+                    body = $('body');
+
+                // Show the fixed header only on larger screen devices
+
+                if (win.width() > 400) {
+
+                    // When we scroll more than 150px down, we set the
+                    // "fixed" class on the body element.
+
+                    win.on('scroll', function (e) {
+
+                        if (win.scrollTop() > showHeaderAt) {
+                            body.addClass('fixed');
+                        }
+                        else {
+                            body.removeClass('fixed');
+                        }
+                    });
+
+                }
+
+            });
+
+        </script>
+        <main>
+
+            <br>
             <div id="boventext">
                     <h1>Gevonden LP in Afrika</h1>
                 

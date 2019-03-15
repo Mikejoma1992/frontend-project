@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/index.css">
+    <script src="JS/script.js" defer></script>
+    <script src="JS/index.js" defer></script>
+</head>
+
+<body>
+    <wrapper>
+        <header class="header-fixed">
+
+            <div class="header-limiter">
+
+                <h1><a href="index.html"><img src="../Images/vinyl_logo.png"></a></h1>
+
+                <nav>
+                    <a href="index.html" class="active">Home</a>
+                    <a href="AlgemeneInfo.html">Algemene informatie</a>
+                    <a href="Overzicht.html">Overzicht</a>
+                    <a href="Nieuws.html">Nieuws</a>
+                    <a href="zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
+                    <a href="Contact.html">Contact</a>
+                </nav>
+
+            </div>
+
+        </header>
+
+        <!-- You need this element to prevent the content of the page from jumping up -->
+        <div class="header-fixed-placeholder"></div>
+
+        <!-- The content of your page would go here. -->
+        <script>
+
+            $(document).ready(function () {
+
+                var showHeaderAt = 150;
+
+                var win = $(window),
+                    body = $('body');
+
+                // Show the fixed header only on larger screen devices
+
+                if (win.width() > 400) {
+
+                    // When we scroll more than 150px down, we set the
+                    // "fixed" class on the body element.
+
+                    win.on('scroll', function (e) {
+
+                        if (win.scrollTop() > showHeaderAt) {
+                            body.addClass('fixed');
+                        }
+                        else {
+                            body.removeClass('fixed');
+                        }
+                    });
+
+                }
+
+            });
+
+        </script>
+
+
+        <!-- Demo ads. Please ignore and remove. -->
+        <script src="http://cdn.tutorialzine.com/misc/enhance/v3.js" async></script>
+        <main>
+            <img src="../Images/playing-vinyl-disc.jpg" id="lp">
+            <div class="p">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum eius, nesciunt iure quasi error modi
+                    commodi, at voluptatem natus voluptatum facere aperiam, maiores dignissimos cum sunt et. Perferendis
+                    fugiat eum tempore quia consectetur? Nobis officiis in fugiat itaque hic ea ipsam nesciunt ratione nam,
+                    assumenda laborum voluptates odit quaerat amet eum minima aspernatur sequi debitis dolor esse rerum ut
+                    repellat iste? Accusantium minima nemo quod ratione temporibus ipsa quas reprehenderit dolorem earum
+                    rerum! Libero accusantium, voluptatum molestiae eveniet ea harum exercitationem? Inventore odio aliquid
+                    nulla, architecto delectus, iure, voluptatibus sed aperiam nobis ex rem? Commodi, delectus recusandae.
+                    Veniam, eveniet quidem.
+                </p>
+            </div>
+        </main>
+        <footer class="footer-distributed">
+
+            <div class="footer-left">
+
+                <img src="../Images/vinyl_logo.png">
+
+                <p class="footer-links">
+                    <a href="index.html">Home</a>
+                    ·
+                    <a href="HTML/AlgemeneInfo.html">Algemene informatie</a>
+                    ·
+                    <a href="HTML/Overzicht.html">Overzicht</a>
+                    ·
+                    <a href="HTML/Nieuws.html">Nieuws</a>
+                    ·
+                    <a href="HTML/zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
+                    ·
+                    <a href="HTML/Contact.html">Contact</a>
+                </p>
+
+                <p class="footer-company-name">Vinylstore Vinyl Addicts &copy; 2019</p>
+            </div>
+
+            <div class="footer-center">
+
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>steenweg 12</span> velthoven, Nederland</p>
+                </div>
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+0342 48 932 82</p>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>Over ons</span>
+                    Vinylstore Vinyl Addicts is een bedrijf dat zich voledig richt op LP's.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
+                </div>
+
+            </div>
+
+        </footer>
+    </wrapper>
+</body>
+
+</html>

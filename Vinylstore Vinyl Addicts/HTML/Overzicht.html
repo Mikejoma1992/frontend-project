@@ -1,87 +1,68 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/overzicht.css">
-        <script src="../JS/script.js" defer></script>
-        <script src="../JS/index.js" defer></script>
-    </head>
-    <body>
-        <wrapper>
-            <header>
-                <div id="bedrijf">
-                    <a href="../index.html">
-                        <img src="../Images/vinyl_logo.png" id="logo">
-                    </a>
-                    <h1>
-                        Vinylstore Vinyl Addicts
-                    </h1>
-                </div>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/overzicht.css">
+    <script src="../JS/script.js" defer></script>
+    <script src="../JS/index.js" defer></script>
+</head>
+
+<body>
+    <wrapper>
+        <header class="header-fixed">
+
+            <div class="header-limiter">
+
+                <h1><a href="index.html"><img src="../Images/vinyl_logo.png"></a></h1>
+
                 <nav>
-                    <ul id="myHeader">
-                        <a href="../index.html">
-                            <li>
-                                Home
-                            </li>
-                        </a>
-                        <a href="AlgemeneInfo.html">
-                            <li>
-                                Algemene informatie
-                            </li>
-                        </a>
-                        <a href="Overzicht.html">
-                            <li class="active">
-                                Overzicht
-                            </li>
-                        </a>
-                        <a href="Nieuws.html">
-                            <li>
-                                Nieuws
-                            </li>
-                        </a>
-                        <a href="zeldzaamheidchecker.html">
-                            <li>
-                                Zeldzaamheidchecker
-                            </li>
-                        </a>
-                        <a href="Contact.html">
-                            <li>
-                                Contact
-                            </li>
-                        </a>
-                    </ul>
+                    <a href="index.html">Home</a>
+                    <a href="AlgemeneInfo.html">Algemene informatie</a>
+                    <a href="Overzicht.html" class="active">Overzicht</a>
+                    <a href="Nieuws.html">Nieuws</a>
+                    <a href="zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
+                    <a href="Contact.html">Contact</a>
                 </nav>
             </header>
             <main>
                 <br>
-                <img src="../Images/article-medium-0075597927030.jpg" id="img1">
-                <div id="txt1">
-                    Artiest: Verhoeven<br>
-                    Albumnaam: De kleine arend<br>
-                    Jaartal: 1983<br>
-                    Conditie: Uitstekend
+                <div class="artikel">
+                    <img src="../Images/article-medium-0075597927030.jpg" id="img1">
+                    <div id="txt1">
+                        Artiest: Verhoeven<br>
+                        Albumnaam: De kleine arend<br>
+                        Jaartal: 1983<br>
+                        Conditie: Uitstekend
+                    </div>
                 </div>
-                <img src="../Images/article-medium-5051083143127.jpg" id="img2">
-                <div id="txt2">
-                    Artiest: Frederik van aamhold<br>
-                    Albumnaam: De groene zee<br>
-                    Jaartal: 1988<br>
-                    Conditie: Uitstekend
+                <div class="artikel">
+                    <img src="../Images/article-medium-5051083143127.jpg" id="img2">
+                    <div id="txt2">
+                        Artiest: Frederik van aamhold<br>
+                        Albumnaam: De groene zee<br>
+                        Jaartal: 1988<br>
+                        Conditie: Uitstekend
+                    </div>
                 </div>
-                <img src="../Images/article-medium-8719262009059.jpg" id="img3">
-                <div id="txt3">
-                    Artiest: Kasper dolberg<br>
-                    Albumnaam: vizier van de soldaat<br>
-                    Jaartal: 1991<br>
-                    Conditie: Uitstekend
+                <div class="artikel">
+                    <img src="../Images/article-medium-8719262009059.jpg" id="img3">
+                    <div id="txt3">
+                        Artiest: Kasper dolberg<br>
+                        Albumnaam: vizier van de soldaat<br>
+                        Jaartal: 1991<br>
+                        Conditie: Uitstekend
+                    </div>
                 </div>
-                <img src="../Images/article2-medium-8714374965606.jpg" id="img4">
-                <div id="txt4">
-                    Artiest: Arnold kippen<br>
-                    Albumnaam: Het was maar een clown<br>
-                    Jaartal: 1983<br>
-                    Conditie: Uitstekend
+                <div class="artikel">
+                    <img src="../Images/article2-medium-8714374965606.jpg" id="img4">
+                    <div id="txt4">
+                        Artiest: Arnold kippen<br>
+                        Albumnaam: Het was maar een clown<br>
+                        Jaartal: 1983<br>
+                        Conditie: Uitstekend
+                    </div>
                 </div>
             </main>
             <footer class="footer-distributed">
@@ -106,40 +87,34 @@
     
                     <p class="footer-company-name">Vinylstore Vinyl Addicts &copy; 2019</p>
                 </div>
-    
-                <div class="footer-center">
-    
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <p><span>steenweg 12</span> velthoven, Nederland</p>
-                    </div>
-    
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>+0342 48 932 82</p>
-                    </div>
-    
+
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+0342 48 932 82</p>
                 </div>
-    
-                <div class="footer-right">
-    
-                    <p class="footer-company-about">
-                        <span>Over ons</span>
-                        Vinylstore Vinyl Addicts is een bedrijf dat zich voledig richt op LP's.
-                    </p>
-    
-                    <div class="footer-icons">
-    
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-    
-                    </div>
-    
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>Over ons</span>
+                    Vinylstore Vinyl Addicts is een bedrijf dat zich voledig richt op LP's.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
                 </div>
-    
-            </footer>
-        </wrapper>
-    </body>
+
+            </div>
+
+        </footer>
+    </wrapper>
+</body>
+
 </html>

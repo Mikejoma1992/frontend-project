@@ -1,62 +1,84 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="../CSS/style.css">
-        <link rel="stylesheet" type="text/css" href="../CSS/zeldzaamheidchecker.css">
-        <script src="../JS/script.js" defer></script>
-        <script src="../JS/index.js" defer></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    </head>
-    <body>
-        <wrapper>
-            <header>
-                <div id="bedrijf">
-                    <a href="../index.html">
-                        <img src="../Images/vinyl_logo.png" id="logo">
-                    </a>
-                    <h1>
-                        Vinylstore Vinyl Addicts
-                    </h1>
-                </div>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/zeldzaamheidchecker.css">
+    <script src="../JS/script.js" defer></script>
+    <script src="../JS/index.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <wrapper>
+        <header class="header-fixed">
+
+            <div class="header-limiter">
+
+                <h1><a href="index.html"><img src="../Images/vinyl_logo.png"></a></h1>
+
                 <nav>
-                    <ul id="myHeader">
-                        <a href="../index.html">
-                            <li>
-                                Home
-                            </li>
-                        </a>
-                        <a href="AlgemeneInfo.html">
-                            <li>
-                                Algemene informatie
-                            </li>
-                        </a>
-                        <a href="Overzicht.html">
-                            <li>
-                                Overzicht
-                            </li>
-                        </a>
-                        <a href="Nieuws.html">
-                            <li>
-                                Nieuws
-                            </li>
-                        </a>
-                        <a href="zeldzaamheidchecker.html">
-                            <li class="active">
-                                Zeldzaamheidchecker
-                            </li>
-                        </a>
-                        <a href="Contact.html">
-                            <li>
-                                Contact
-                            </li>
-                        </a>
-                    </ul>
+                    <a href="index.html">Home</a>
+                    <a href="AlgemeneInfo.html">Algemene informatie</a>
+                    <a href="Overzicht.html">Overzicht</a>
+                    <a href="Nieuws.html">Nieuws</a>
+                    <a href="zeldzaamheidchecker.html" class="active">Zeldzaamheidchecker</a>
+                    <a href="Contact.html">Contact</a>
                 </nav>
-            </header>
-            <main>
+
+            </div>
+
+        </header>
+
+        <!-- You need this element to prevent the content of the page from jumping up -->
+        <div class="header-fixed-placeholder"></div>
+
+        <!-- The content of your page would go here. -->
+        <script>
+
+            $(document).ready(function () {
+
+                var showHeaderAt = 150;
+
+                var win = $(window),
+                    body = $('body');
+
+                // Show the fixed header only on larger screen devices
+
+                if (win.width() > 400) {
+
+                    // When we scroll more than 150px down, we set the
+                    // "fixed" class on the body element.
+
+                    win.on('scroll', function (e) {
+
+                        if (win.scrollTop() > showHeaderAt) {
+                            body.addClass('fixed');
+                        }
+                        else {
+                            body.removeClass('fixed');
+                        }
+                    });
+
+                }
+
+            });
+
+        </script>
+        <main>
+            <br>
+            <h1>Zeldzaamheidchecker</h1>
+            <br>
+            <p>U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven
+                invullen. De collectors editie is een optie. </p>
+            <br>
+            <form id="checkRarity" action="">
+                <span class="rarityResponse">Invoeren artiest:</span><input id="artist" type="text" name="artist"
+                    required>
                 <br>
-                <h1>Zeldzaamheidchecker</h1>
+                <span class="rarityResponse">Invullen jaartal: </span><input id="year" type="number" name="year"
+                    required>
                 <br>
                 <p id="zeldzaamTekst">U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven invullen. De collectors editie is een optie. </p>
                 <br>
@@ -99,45 +121,35 @@
     
                     <p class="footer-company-name">Vinylstore Vinyl Addicts &copy; 2019</p>
                 </div>
-    
-                <div class="footer-center">
-    
-                    <div>
-                        <i class="fa fa-map-marker"></i>
-                        <p><span></span> </p>
-                    </div>
-    
-                    <div>
-                        <i class="fa fa-phone"></i>
-                        <p>+1 555 123456</p>
-                    </div>
-    
-                    <div>
-                        <i class="fa fa-envelope"></i>
-                        <p><a href="mailto:support@company.com">info@vinylstore.com</a></p>
-                    </div>
-    
+
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="mailto:support@company.com">info@vinylstore.com</a></p>
                 </div>
-    
-                <div class="footer-right">
-    
-                    <p class="footer-company-about">
-                        <span>Over ons</span>
-                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
-                    </p>
-    
-                    <div class="footer-icons">
-    
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-github"></i></a>
-    
-                    </div>
-    
+
+            </div>
+
+            <div class="footer-right">
+
+                <p class="footer-company-about">
+                    <span>Over ons</span>
+                    Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
+                    lacus vehicula sit amet.
+                </p>
+
+                <div class="footer-icons">
+
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-github"></i></a>
+
                 </div>
-    
-            </footer>
-        </wrapper>
-    </body>
+
+            </div>
+
+        </footer>
+    </wrapper>
+</body>
+
 </html>
