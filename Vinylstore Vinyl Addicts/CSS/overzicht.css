@@ -74,5 +74,5 @@ main
 footer
 {
     position: absolute;
-    bottom: -40%;
+    top: 600px;
 }
