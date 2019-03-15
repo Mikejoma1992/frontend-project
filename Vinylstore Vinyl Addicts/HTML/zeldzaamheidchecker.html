@@ -80,47 +80,46 @@
                 <span class="rarityResponse">Invullen jaartal: </span><input id="year" type="number" name="year"
                     required>
                 <br>
-                <span class="rarityResponse">Is het een collectors item? </span><input id="collectors" type="checkbox"
-                    name="checkbox">
+                <p id="zeldzaamTekst">U kunt hieronder kijken of uw plaat zeldzaam is. U moet wel eerst een artiest en het jaartal van uitgaven invullen. De collectors editie is een optie. </p>
                 <br>
-                <input id="send" type="submit" value="Zelzaamheid bepalen"></input>
-            </form>
-            <h1>Zeldzaamheid: <span id="result"></span> </h1>
+                <form id="checkRarity" action="">
+                    <span class="rarityResponse">Invoeren artiest:</span><input id="artist" type="text" name="artist" required>
+                    <br>
+                    <br>
+                    <span class="rarityResponse">Invullen jaartal: </span><input id="year" type="number" name="year" required>
+                    <br>
+                    <br>
+                    <label id="lblCol" class="rarityResponse" for="collectors">Is het een collectors item? </label><input id="collectors" type="checkbox" name="checkbox">
+                    <br>
+                    <br>
+                    <input id="send"type="submit" value="Zelzaamheid bepalen"></input>
+                </form>
+                <br>
+                <h1>Zeldzaamheid:</h1> 
+                <h2 id="result"></h2> 
+                
+            </main>
+            <footer class="footer-distributed">
 
-        </main>
-        <footer class="footer-distributed">
-
-            <div class="footer-left">
-
-                <img src="../Images/vinyl_logo.png">
-
-                <p class="footer-links">
-                    <a href="index.html">Home</a>
-                    ·
-                    <a href="AlgemeneInfo.html">Algemene informatie</a>
-                    ·
-                    <a href="Overzicht.html">Overzicht</a>
-                    ·
-                    <a href="Nieuws.html">Nieuws</a>
-                    ·
-                    <a href="zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
-                    ·
-                    <a href="Contact.html">Contact</a>
-                </p>
-
-                <p class="footer-company-name">Vinylstore Vinyl Addicts &copy; 2019</p>
-            </div>
-
-            <div class="footer-center">
-
-                <div>
-                    <i class="fa fa-map-marker"></i>
-                    <p><span></span> </p>
-                </div>
-
-                <div>
-                    <i class="fa fa-phone"></i>
-                    <p>+1 555 123456</p>
+                <div class="footer-left">
+    
+                    <img src="../Images/vinyl_logo.png">
+    
+                    <p class="footer-links">
+                        <a href="index.html">Home</a>
+                        &#8901;
+                        <a href="AlgemeneInfo.html">Algemene informatie</a>
+                        &#8901;
+                        <a href="Overzicht.html">Overzicht</a>
+                        &#8901;
+                        <a href="Nieuws.html">Nieuws</a>
+                        &#8901;
+                        <a href="zeldzaamheidchecker.html">Zeldzaamheidchecker</a>
+                        &#8901;
+                        <a href="Contact.html">Contact</a>
+                    </p>
+    
+                    <p class="footer-company-name">Vinylstore Vinyl Addicts &copy; 2019</p>
                 </div>
 
                 <div>
