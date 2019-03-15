@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+*
+{
+    font-family: 'Noto Sans';
+}
+
 #MContact
 {
     text-align: left;
@@ -145,12 +151,14 @@ option
     cursor: pointer;
     margin-bottom: 25px;
     box-shadow: 0 5px #FA1E8B;
+    border: none;
 }
 
-#knop:active {
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+#knop:active 
+{
+    background-color: #F64E8B;
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
   }
 
 
@@ -208,5 +216,22 @@ option
         margin-top: 20px;
         margin-left: 5%;
         padding: 10px;
+    }
+
+    #knop
+    {
+        background-color: #F64E8B;
+        color: white;
+        cursor: pointer;
+        margin-bottom: 25px;
+        box-shadow: none;
+        border: none;
+    }
+
+    #knop:active 
+    {
+        background-color: #F64E8B;
+        box-shadow: none;
+        transform: none;
     }
   }
