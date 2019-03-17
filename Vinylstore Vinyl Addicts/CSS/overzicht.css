@@ -22,7 +22,7 @@ main
 {
     position: relative;
     left: 120px;
-    
+    width: 150px;
 }
 #img2
 {
@@ -36,7 +36,7 @@ main
     position: relative;
     left: 120px;
     top: 50px;
-    
+    width: 150px;
 }
 
 #img3
@@ -52,6 +52,7 @@ main
     position: relative;
     left: 120px;
     top: 100px;
+    width: 150px;
 }
 
 #img4
@@ -67,7 +68,8 @@ main
 {
     position: relative;
     left: 120px;
-    top: 120px;   
+    top: 120px;  
+    width: 150px; 
 }
 
 ul
