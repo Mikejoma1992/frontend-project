@@ -2,6 +2,15 @@
 {
 	cursor: pointer;
 }
+
+*
+{
+	text-align: center;
+}
+main
+{
+	height: 500px;
+}
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
 	 #artist, #year, .rarityResponse, #send {
