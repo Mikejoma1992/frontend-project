@@ -10,6 +10,10 @@ main
     margin-left: 40%;
     margin-right: 50%
 }
+.artikel:last-of-type
+{
+    margin-bottom: 150px;
+}
 #img1
 {
     position: absolute;
@@ -82,15 +86,11 @@ main
     z-index: 0;
 }
 
-footer
-{
-    position: absolute;
-    top: 600px;
-}
+
 @media only screen and (max-width: 768px) {
     article
     {
-        padding-top: 100px;
+        padding-top: 40px;
         padding-right: 200px;
     }
 }
