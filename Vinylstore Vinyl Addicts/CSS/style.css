@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 *
 {
     margin: 0px;
-    padding: 0px;
+	padding: 0px;
+	font-family: 'Noto Sans';
 }
 body
 {
@@ -207,7 +209,7 @@ footer img
 	font: bold 16px sans-serif;
 
 	padding: 55px 50px;
-	margin-top: 610px;
+	margin-top: 70px;
 }
 
 .footer-distributed .footer-left,

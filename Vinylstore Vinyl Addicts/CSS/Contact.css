@@ -1,144 +1,143 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 *
 {
-    font-family: 'Noto Sans';
+    font-family: 'Noto Sans' !important;
 }
 
 #MContact
 {
-    text-align: left;
+    text-align: left !important;
 }
 
 textarea
 {
-    resize: none;
-    margin-left: 2.5%;
-    margin-top: 15px;
-    width: 89%;
-    height: 150px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 5px;
-    border: 1px solid black;
+    resize: none !important;
+    margin-left: 2.5% !important;
+    margin-top: 15px !important;
+    width: 89% !important;
+    height: 150px !important;
+    border-radius: 5px !important;
+    margin-bottom: 15px !important;
+    padding: 5px !important;
+    border: 1px solid black !important;
 }
 
 #ContactFormulier
 {
-    margin-top: 20px;
-    margin-left: 5%;
-    display: inline-block;
-    width: 40%;
-    border: 1px solid black;
+    margin-top: 20px !important;
+    margin-left: 5% !important;
+    display: inline-block !important;
+    width: 40% !important;
+    border: 1px solid black !important;
 }
 
 input
 {
-    margin-left: 2.5%;
-    margin-top: 15px;
-    width: 90%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid black;
-    padding-left: 5px;
+    margin-left: 2.5% !important;
+    margin-top: 15px !important;
+    width: 90% !important;
+    height: 40px !important;
+    border-radius: 5px !important;
+    border: 1px solid black !important;
+    padding-left: 5px !important;
 }
 
 input:focus
 {
-    outline: none;
+    outline: none !important;
 }
 
 select:focus
 {
-    outline: none;
+    outline: none !important;
 }
 
 textarea:focus
 {
-    outline: none;
+    outline: none !important;
 }
 
 #Aanhef
 {
-    margin-left: 2.5%;
-    margin-top: 20px;
-    width: 91%;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px solid black;
+    margin-left: 2.5% !important;
+    margin-top: 20px !important;
+    width: 91% !important;
+    height: 40px !important;
+    border-radius: 5px !important;
+    border: 1px solid black !important;
 }
 
 #klein
 {
-    font-size: 10px;
-    height: 10px;
-    padding: 0px;
+    font-size: 10px !important;
+    height: 10px !important;
+    padding: 0px !important;
 }
 
 option
 {
-    padding: 5px;
+    padding: 5px !important;
 }
 
 /* Checkbox nieuwsbrief */
 .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-    cursor: pointer;
-    font-size: 17px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    margin-left: 3%;
+    display: block !important;
+    position: relative !important;
+    padding-left: 35px !important;
+    margin-bottom: 12px !important;
+    cursor: pointer !important;
+    font-size: 17px !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    margin-left: 3% !important;
 }
   
 .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+    position: absolute !important;
+    opacity: 0 !important;
+    cursor: pointer !important;
+    height: 0 !important;
+    width: 0 !important;
 }
 
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    background-color: #eee;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    height: 25px !important;
+    width: 25px !important;
+    background-color: #eee !important;
 }
 
 .container:hover input ~ .checkmark {
-    background-color: #ccc;
+    background-color: #ccc !important;
 }
 
 .container input:checked ~ .checkmark {
-    background-color: #F64E8B;
+    background-color: #F64E8B !important;
 }
 
 .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
+    content: "" !important;
+    position: absolute !important;
+    display: none !important;
 }
 
 .container input:checked ~ .checkmark:after {
-    display: block;
+    display: block !important;
 }
 
 .container .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    left: 9px !important;
+    top: 5px !important;
+    width: 5px !important;
+    height: 10px !important;
+    border: solid white !important;
+    border-width: 0 3px 3px 0 !important;
+    -webkit-transform: rotate(45deg) !important;
+    -ms-transform: rotate(45deg) !important;
+    transform: rotate(45deg !important);
 }
 
 
@@ -146,19 +145,19 @@ option
 
 #knop
 {
-    background-color: #F64E8B;
-    color: white;
-    cursor: pointer;
-    margin-bottom: 25px;
-    box-shadow: 0 5px #FA1E8B;
-    border: none;
+    background-color: #F64E8B !important;
+    color: white !important;
+    cursor: pointer !important;
+    margin-bottom: 25px !important;
+    box-shadow: 0 5px #FA1E8B !important;
+    border: none !important;
 }
 
 #knop:active 
 {
-    background-color: #F64E8B;
-    box-shadow: 0 3px #666;
-    transform: translateY(2px);
+    background-color: #F64E8B !important;
+    box-shadow: 0 3px #666 !important;
+    transform: translateY(2px) !important;
   }
 
 
@@ -166,36 +165,36 @@ option
 
 #gegevens
 {
-    display: inline-block;
-    position: absolute;
-    border: 1px solid black;
-    margin-top: 20px;
-    margin-left: 9%;
-    width: 40%;
-    padding: 10px;
+    display: inline-block !important;
+    position: absolute !important;
+    border: 1px solid black !important;
+    margin-top: 20px !important;
+    margin-left: 9% !important;
+    width: 40% !important;
+    padding: 10px !important;
 }
 
 #gegevens>p
 {
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 20px !important;
+    text-align: center !important;
 }
 
 #gegevens>table
 {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
 .groot
 {
-    width: 140px;
+    width: 140px !important;
     /* padding-left: 10px; */
 }
 
 .kleiner
 {
-    width: 120px;
+    width: 120px !important;
 }
 
 
@@ -203,35 +202,35 @@ option
 @media only screen and (max-width: 768px) {
     #ContactFormulier 
     {
-      width: 90%;
-      display: block;
+      width: 90% !important;
+      display: block !important;
     }
 
     #gegevens
     {
-        display: block;
-        width: 85.5%;
-        position: relative;
-        border: 1px solid black;
-        margin-top: 20px;
-        margin-left: 5%;
-        padding: 10px;
+        display: block !important;
+        width: 85.5% !important;
+        position: relative !important;
+        border: 1px solid black !important;
+        margin-top: 20px !important;
+        margin-left: 5% !important;
+        padding: 10px !important;
     }
 
     #knop
     {
-        background-color: #F64E8B;
-        color: white;
-        cursor: pointer;
-        margin-bottom: 25px;
-        box-shadow: none;
-        border: none;
+        background-color: #F64E8B !important;
+        color: white !important;
+        cursor: pointer !important;
+        margin-bottom: 25px !important;
+        box-shadow: none !important;
+        border: none !important;
     }
 
     #knop:active 
     {
-        background-color: #F64E8B;
-        box-shadow: none;
-        transform: none;
+        background-color: #F64E8B !important;
+        box-shadow: none !important;
+        transform: none !important;
     }
   }
