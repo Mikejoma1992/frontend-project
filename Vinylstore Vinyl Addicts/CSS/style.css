@@ -3,7 +3,6 @@
     margin: 0px;
     padding: 0px;
 }
-
 body
 {
     display: grid;
@@ -111,8 +110,12 @@ body.fixed .header-fixed .header-limiter nav {
 
 /* Making the header responsive */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
 
+	main
+	{
+		margin-top: 100px;
+	}
 	.header-fixed {
 		padding: 20px 0;
 		height: 75px;
@@ -132,7 +135,7 @@ body.fixed .header-fixed .header-limiter nav {
 	}
 
 	.header-fixed .header-limiter nav a {
-		font-size: 13px;
+		font-size: 25px;
 		color: black;
 	}
 
@@ -152,7 +155,7 @@ body {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	margin: 0;
 	padding: 0;
-	height: 1500px;
+	
 }
 
 nav ul 
